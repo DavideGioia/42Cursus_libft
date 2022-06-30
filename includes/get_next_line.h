@@ -15,12 +15,10 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+# include "libft.h"
 
 # define BUFFER_SIZE 100
 
 char	*get_next_line(int fd);
-char	*ft_strchr(char *s, int c);
-char	*ft_strjoin(char *s1, char *s2);
-size_t	ft_strlen(char *str);
 
 #endif
