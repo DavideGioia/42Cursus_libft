@@ -6,17 +6,13 @@
 #    By: dgioia <dgioia@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/20 17:44:25 by dgioia            #+#    #+#              #
-#    Updated: 2022/05/20 19:52:59 by dgioia           ###   ########.fr        #
+#    Updated: 2022/06/30 17:24:22 by dgioia           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC= gcc
 
 CFLAGS= -Wall -Werror -Wextra
-#Only one line at a time
-#CFLAGS+= -g3 -fsanitize=address,undefined
-#CFLAGS+= -g3 -fsanitize=thread,undefined
-#CFLAGS+= -g3 -fsanitize=memory,undefined
 
 NAME= libft.a
 

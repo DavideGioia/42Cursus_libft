@@ -6,12 +6,11 @@
 /*   By: dgioia <dgioia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/02 16:45:02 by dgioia            #+#    #+#             */
-/*   Updated: 2022/05/20 19:43:34 by dgioia           ###   ########.fr       */
+/*   Updated: 2022/06/30 17:22:27 by dgioia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-//#include <stdio.h>
 
 int	ft_char(char lett)
 {
@@ -63,11 +62,3 @@ int	ft_printf(const	char *string, ...)
 	}
 	return (count);
 }
-
-// int	main(){
-// 	int ret = 0;
-// 	int ret2 = 0;
-// 	ret = ft_printf("D: %s\n", "ciao");
-// 	ret2 = printf("D: %s\n", "ciao");
-// 	printf("M: %d, V: %d",ret, ret2);
-// }

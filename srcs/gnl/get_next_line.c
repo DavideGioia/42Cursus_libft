@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "get_next_line.h"
-#include <stdio.h>
 #include <fcntl.h>
 
 char	*ft_get_line(char *save)
@@ -106,23 +105,3 @@ char	*get_next_line(int fd)
 	save = ft_new_save(save);
 	return (line);
 }
-
-/* i test vengono effettuati su tests/1.txt */
-// int main(void)
-// {
-//  	char *line;
-//  	int i;
-//  	int fd;
-
-//  	fd = open("tests/1.txt", O_RDONLY);
-// 	i = 1;
-//  	while (i < 7)
-//  	{
-//  		line = get_next_line(fd);
-//  		printf("Line: %s", line);
-//  		free(line);
-//  		i++;
-//  	}
-//  	close(fd);
-// 	return (0);
-// }
