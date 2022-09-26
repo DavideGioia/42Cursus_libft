@@ -1,20 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dgioia <dgioia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/15 14:57:41 by dgioia            #+#    #+#             */
-/*   Updated: 2022/02/15 14:57:41 by dgioia           ###   ########.fr       */
+/*   Created: 2022/09/24 23:40:56 by dgioia            #+#    #+#             */
+/*   Updated: 2022/09/24 23:40:56 by dgioia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int c)
+int ft_strcmp(const char *s1, const char *s2)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-		return (1);
-	return (0);
+    size_t i;
+
+    i = 0;
+    while (s1[i] == s2[i] && s1[i])
+        i++;
+    return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
