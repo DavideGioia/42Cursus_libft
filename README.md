@@ -18,20 +18,12 @@
 ## Functions
 <table>
   <tr>
-    <th>Function name</th>
+    <th>[is] functions</th>
     <th>Description</th>
   </tr>
   <tr>
-    <td><a href="https://github.com/DavideGioia/42Cursus_libft/blob/master/srcs/lib/ft_atoi.c">ft_atoi</a></td>
-    <td>convert ASCII string to integer</td>
-  </tr>
-  <tr>
-    <td><a href="https://github.com/DavideGioia/42Cursus_libft/blob/master/srcs/lib/ft_bzero.c">ft_bzero</a></td>
-    <td>write zeroes to a byte string</td>
-  </tr>
-  <tr>
-    <td><a href="https://github.com/DavideGioia/42Cursus_libft/blob/master/srcs/lib/ft_calloc.c">ft_calloc</a></td>
-    <td>memory allocation</td>
+    <td><a href="https://github.com/DavideGioia/42Cursus_libft/blob/master/srcs/lib/ft_isascii.c">ft_isascii</a></td>
+    <td>test for ASCII character</td>
   </tr>
   <tr>
     <td><a href="https://github.com/DavideGioia/42Cursus_libft/blob/master/srcs/lib/ft_isalnum.c">ft_isalnum</a></td>
@@ -42,10 +34,6 @@
     <td>alphabetic character test</td>
   </tr>
   <tr>
-    <td><a href="https://github.com/DavideGioia/42Cursus_libft/blob/master/srcs/lib/ft_isascii.c">ft_isascii</a></td>
-    <td>test for ASCII character</td>
-  </tr>
-  <tr>
     <td><a href="https://github.com/DavideGioia/42Cursus_libft/blob/master/srcs/lib/ft_isdigit.c">ft_isdigit</a></td>
     <td>decimal-digit character test</td>
   </tr>
@@ -53,9 +41,46 @@
     <td><a href="https://github.com/DavideGioia/42Cursus_libft/blob/master/srcs/lib/ft_isprint.c">ft_isprint</a></td>
     <td>printing character test (space character inclusive)</td>
   </tr>
+  
   <tr>
-    <td><a href="https://github.com/DavideGioia/42Cursus_libft/blob/master/srcs/lib/ft_itoa.c">ft_itoa</a></td>
-    <td>convert integer to ASCII string</td>
+    <th>[lst] functions</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="">ft_lstnew</a></td>
+    <td>create new list</td>
+  </tr>
+  <tr>
+    <td><a href="">ft_lstsize</a></td>
+    <td>count elements of a list</td>
+  </tr>
+  <tr>
+    <td><a href="">ft_lstlast</a></td>
+    <td>find last element of list</td>
+  </tr>
+  <tr>
+    <td><a href="">ft_lstiter</a></td>
+    <td>apply function to content of all list's elements</td>
+  </tr>
+  <tr>
+    <td><a href="">ft_lstmap</a></td>
+    <td>apply function to content of all list's elements into new list</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/DavideGioia/42Cursus_libft/blob/master/srcs/lib/ft_lstclear.c">ft_lstclear</a></td>
+    <td>delete sequence of elements of list from a starting point</td>
+  </tr>
+  <tr>
+    <td><a href="">ft_lstdelone</a></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a href="">ft_lstlast</a></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a href="">ft_lstadd_back</a></td>
+    <td></td>
   </tr>
   <tr>
     <td><a href="">ft_lstadd_back</a></td>
@@ -65,17 +90,18 @@
     <td><a href="">ft_lstadd_front</a></td>
     <td></td>
   </tr>
+  
   <tr>
-    <td><a href="https://github.com/DavideGioia/42Cursus_libft/blob/master/srcs/lib/ft_lstclear.c">ft_lstclear</a></td>
-    <td>delete sequence of elements of list from a starting point</td>
+    <th>[mem] functions</th>
+    <th>Description</th>
   </tr>
   <tr>
-    <td><a href="">ft_tolower</a></td>
-    <td>upper case to lower case letter conversion</td>
+    <td><a href="https://github.com/DavideGioia/42Cursus_libft/blob/master/srcs/lib/ft_bzero.c">ft_bzero</a></td>
+    <td>write zeroes to a byte string</td>
   </tr>
   <tr>
-    <td><a href="">ft_toupper</a></td>
-    <td>lower case to upper case letter conversion</td>
+    <td><a href="https://github.com/DavideGioia/42Cursus_libft/blob/master/srcs/lib/ft_calloc.c">ft_calloc</a></td>
+    <td>memory allocation</td>
   </tr>
   <tr>
     <td><a href="">ft_memset</a></td>
@@ -97,17 +123,31 @@
     <td><a href="">ft_memcpy</a></td>
     <td>copy memory area</td>
   </tr>
+
   <tr>
-    <td><a href="">ft_strlen</a></td>
-    <td>find length of string</td>
+    <th>[put] functions</th>
+    <th>Description</th>
   </tr>
   <tr>
-    <td><a href="">ft_strchr</a></td>
-    <td>locate character in string (first occurrence)</td>
+    <td><a href="">ft_putchar_fd</a></td>
+    <td>output a character to given file</td>
   </tr>
   <tr>
-    <td><a href="">ft_strrchr</a></td>
-    <td>locate character in string (last occurence)</td>
+    <td><a href="">ft_punbr_fd</a></td>
+    <td>output string to given file</td>
+  </tr>
+  <tr>
+    <td><a href="">ft_putnbr_fd</a></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a href="">ft_putstr_fd</a></td>
+    <td></td>
+  </tr>
+  
+  <tr>
+    <th>[str] functions</th>
+    <th>Description</th>
   </tr>
   <tr>
     <td><a href="">ft_strnstr</a></td>
@@ -150,16 +190,16 @@
     <td>size-bounded string concatenation</td>
   </tr>
   <tr>
-    <td><a href="">ft_putchar_fd</a></td>
-    <td>output a character to given file</td>
+    <td><a href="">ft_strlen</a></td>
+    <td>find length of string</td>
   </tr>
   <tr>
-    <td><a href="">ft_punbr_fd</a></td>
-    <td>output string to given file</td>
+    <td><a href="">ft_strchr</a></td>
+    <td>locate character in string (first occurrence)</td>
   </tr>
   <tr>
-    <td><a href="">ft_itoa</a></td>
-    <td>convert integer to ASCII string</td>
+    <td><a href="">ft_strrchr</a></td>
+    <td>locate character in string (last occurence)</td>
   </tr>
   <tr>
     <td><a href="">ft_substr</a></td>
@@ -177,25 +217,35 @@
     <td><a href="">ft_strmapi</a></td>
     <td>create new string from modifying string with specified function</td>
   </tr>
+  
   <tr>
-    <td><a href="">ft_lstnew</a></td>
-    <td>create new list</td>
+    <th>[to] functions</th>
+    <th>Description</th>
   </tr>
   <tr>
-    <td><a href="">ft_lstsize</a></td>
-    <td>count elements of a list</td>
+    <td><a href="https://github.com/DavideGioia/42Cursus_libft/blob/master/srcs/lib/ft_atoi.c">ft_atoi</a></td>
+    <td>convert ASCII string to integer</td>
   </tr>
   <tr>
-    <td><a href="">ft_lstlast</a></td>
-    <td>find last element of list</td>
+    <td><a href="https://github.com/DavideGioia/42Cursus_libft/blob/master/srcs/lib/ft_itoa.c">ft_itoa</a></td>
+    <td>convert integer to ASCII string</td>
   </tr>
   <tr>
-    <td><a href="">ft_lstiter</a></td>
-    <td>apply function to content of all list's elements</td>
+    <td><a href="">ft_itoa</a></td>
+    <td>convert integer to ASCII string</td>
   </tr>
   <tr>
-    <td><a href="">ft_lstmap</a></td>
-    <td>apply function to content of all list's elements into new list</td>
+    <td><a href="">ft_tolower</a></td>
+    <td>upper case to lower case letter conversion</td>
+  </tr>
+  <tr>
+    <td><a href="">ft_toupper</a></td>
+    <td>lower case to upper case letter conversion</td>
+  </tr>
+  
+  <tr>
+    <th>EXTRA functions</th>
+    <th>Description</th>
   </tr>
   <tr>
     <td><a href="">ft_printf</a></td>
