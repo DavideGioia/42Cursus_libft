@@ -6,7 +6,7 @@
 #    By: dgioia <dgioia@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/20 17:44:25 by dgioia            #+#    #+#              #
-#    Updated: 2022/09/26 17:23:58 by dgioia           ###   ########.fr        #
+#    Updated: 2022/10/26 13:25:07 by dgioia           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -61,6 +61,7 @@ LIBSRCS = is/ft_isalpha.c \
 		  lst/ft_lstclear.c \
 		  lst/ft_lstiter.c \
 		  lst/ft_lstmap.c \
+		  lst/ft_lstdelall.c \
 		   
 PRINTFSRCS = ft_printf.c \
 			  ft_printhex.c \

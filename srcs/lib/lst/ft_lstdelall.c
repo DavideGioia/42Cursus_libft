@@ -1,25 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstdelall.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dgioia <dgioia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/08 14:06:02 by dgioia            #+#    #+#             */
-/*   Updated: 2022/10/26 02:11:35 by dgioia           ###   ########.fr       */
+/*   Created: 2022/10/26 02:21:48 by dgioia            #+#    #+#             */
+/*   Updated: 2022/10/26 13:25:39 by dgioia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(int content)
+void	ft_lstdelall(t_list **stack)
 {
-	t_list	*nodo;
+	t_list	*tmp;
 
-	nodo = (t_list *) malloc (sizeof(t_list));
-	if (nodo == NULL)
-		return (NULL);
-	nodo->content = content;
-	nodo->next = NULL;
-	return (nodo);
+	if (*stack == NULL)
+		return ;
+	tmp = *stack;
+	while (*stack != NULL)
+	{
+		tmp = (*stack)->next;
+		free (*stack);
+		*stack = tmp;
+	}
 }
