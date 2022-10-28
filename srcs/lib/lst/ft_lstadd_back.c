@@ -6,7 +6,7 @@
 /*   By: dgioia <dgioia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 16:47:52 by dgioia            #+#    #+#             */
-/*   Updated: 2022/02/15 14:58:17 by dgioia           ###   ########.fr       */
+/*   Updated: 2022/10/28 16:22:08 by dgioia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,13 @@
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_list	*node;
+	t_list	*tmp;
 
-	if (!lst || !new)
-		return ;
-	node = *lst;
-	if (*lst == NULL)
+	if (*lst != NULL)
 	{
-		*lst = new;
-		return ;
+		tmp = ft_lstlast(*lst);
+		tmp->next = new;
 	}
-	while (node->next != NULL)
-		node = node->next;
-	node->next = new;
+	else
+		(*lst) = new;
 }

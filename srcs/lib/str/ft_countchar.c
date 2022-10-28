@@ -10,18 +10,18 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_countchar(char *s, char c)
+int	ft_countchar(char *s, char c)
 {
-    int count;
+	int	count;
 
-    if (!s)
-        return (0);
-    count = 0;
-    while (*s)
-    {
-        if (*s == c)
-            count++;
-        s++;
-    }
-    return (count);
+	if (!s)
+		return (0);
+	count = 0;
+	while (*s)
+	{
+		if (*s == c)
+			count++;
+		s++;
+	}
+	return (count);
 }

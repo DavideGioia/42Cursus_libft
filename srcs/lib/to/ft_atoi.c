@@ -28,12 +28,12 @@ long int	ft_atoi(char *str)
 	while (*str <= 57 && *str >= 48)
 	{
 		if (!ft_isdigit(*str) && *str != '\0')
-			return(0);
+			return (0);
 		y = (y * 10) + ((*str - 48) % 10);
 		str++;
 	}
 	if (!ft_isdigit(*str) && *str != '\0')
-		return(0);
+		return (0);
 	y *= x;
 	return (y);
 }

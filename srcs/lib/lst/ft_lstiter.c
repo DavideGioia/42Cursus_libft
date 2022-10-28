@@ -6,7 +6,7 @@
 /*   By: dgioia <dgioia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 17:34:45 by dgioia            #+#    #+#             */
-/*   Updated: 2022/02/15 14:58:34 by dgioia           ###   ########.fr       */
+/*   Updated: 2022/10/28 16:23:33 by dgioia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,11 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	while (lst)
+	if (lst == NULL)
+		return ;
+	while (lst != NULL)
 	{
-		f(lst->content);
+		f(&lst->content);
 		lst = lst->next;
 	}
 }
